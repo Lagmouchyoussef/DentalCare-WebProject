@@ -1,668 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. YOUSSEF LAGMOUCH Dental Clinic | Casablanca</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Clinique Dentaire Dr. Lagmouch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with logo and video banner -->
     <header>
-        <div class="header-top">
-            <div class="logo-container">
-                <img src="data:image/png;base64,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" class="logo" width="50" height="50">
-                <h1>Dr. YOUSSEF LAGMOUCH</h1>
-            </div>
-            <div class="header-actions">
-                <button id="theme-toggle" class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="emergency-contact">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>Emergency: +212 522 123 456</span>
-                </div>
-            </div>
-        </div>
-        <div class="video-banner">
-            <video autoplay muted loop>
-                <source src="c:\Users\youss\Downloads\4490311-uhd_3840_2160_25fps.mp4" type="video/mp4">
-                Your browser does not support the video tag
-            </video>
-            <div class="banner-text">
-                <h2>Quality Dental Care in Casablanca</h2>
-                <p>Modern treatments with the highest standards in a comfortable environment</p>
-                <a href="#appointment" class="cta-button">Book an Appointment</a>
-            </div>
+        <div class="logo">
+            <h1>Dr. Youssef Lagmouch</h1>
+            <p>Chirurgien-Dentiste à Casablanca</p>
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#dentist"><i class="fas fa-user-md"></i> Our Dentist</a></li>
-            <li><a href="#services"><i class="fas fa-teeth"></i> Services</a></li>
-            <li><a href="#advice"><i class="fas fa-lightbulb"></i> Dental Advice</a></li>
-            <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
-            <li><a href="#appointment"><i class="fas fa-calendar-check"></i> Appointment</a></li>
-            <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#rendezvous">Rendez-vous</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <div class="welcome-container">
-                <h2>Welcome to Our Dental Clinic</h2>
-                <p>At Dr. YOUSSEF LAGMOUCH Dental Clinic, we are committed to providing exceptional dental care using state-of-the-art technology in a warm and welcoming environment. Our team of professionals is dedicated to ensuring your comfort while delivering the highest quality dental treatments.</p>
-                
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-tooth"></i>
-                        <h3>Painless Treatments</h3>
-                        <p>Our advanced techniques ensure minimal discomfort during all procedures.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-certificate"></i>
-                        <h3>Certified Specialists</h3>
-                        <p>Highly qualified professionals with years of experience in dental care.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Sterile Environment</h3>
-                        <p>Strict sterilization protocols to ensure your safety and health.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-clock"></i>
-                        <h3>Flexible Hours</h3>
-                        <p>We offer convenient appointment times to fit your busy schedule.</p>
-                    </div>
-                </div>
-            </div>
+        <section id="accueil">
+            <h2>Bienvenue dans notre clinique</h2>
+            <img src="https://via.placeholder.com/800x400?text=Clinique+Dentaire" alt="Clinique">
+            <p>Des soins dentaires de qualité pour toute la famille.</p>
         </section>
 
-        <!-- Dentist Section -->
-        <section id="dentist" class="section">
-            <h2>Our Dentist</h2>
-            <div class="doctor-profile">
-                <div class="doctor-photo-container">
-                    <img src="c:\Users\youss\Downloads\Gemini_Generated_Image_hheye3hheye3hhey.jpeg" alt="Dr. YOUSSEF LAGMOUCH" class="doctor-photo">
-                    <div class="certification-badges">
-                        <div class="badge"><i class="fas fa-award"></i> Certified Orthodontist</div>
-                        <div class="badge"><i class="fas fa-award"></i> Implant Specialist</div>
-                        <div class="badge"><i class="fas fa-award"></i> 10+ Years Experience</div>
-                    </div>
-                </div>
-                <div class="doctor-bio">
-                    <h3>Dr. YOUSSEF LAGMOUCH</h3>
-                    <div class="bio-section">
-                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-                        <ul>
-                            <li>Doctor of Dental Surgery, University of Casablanca (2012)</li>
-                            <li>Specialization in Orthodontics, Paris Descartes University (2015)</li>
-                            <li>Implantology Certification, International Congress of Oral Implantologists (2017)</li>
-                            <li>Advanced Training in Cosmetic Dentistry, London (2019)</li>
-                        </ul>
-                    </div>
-                    <div class="bio-section">
-                        <h4><i class="fas fa-briefcase"></i> Professional Experience</h4>
-                        <ul>
-                            <li>10+ years of dental practice with thousands of satisfied patients</li>
-                            <li>Member of Moroccan Dental Association and International Dental Federation</li>
-                            <li>Expert in cosmetic dentistry, dental implants, and complex oral rehabilitation</li>
-                            <li>Regular participant in international dental conferences and workshops</li>
-                        </ul>
-                    </div>
-                    <div class="bio-section">
-                        <h4><i class="fas fa-heart"></i> Philosophy</h4>
-                        <p>"I believe in providing personalized, gentle care that addresses both the functional and aesthetic aspects of dentistry. My goal is to help patients achieve and maintain optimal oral health while creating beautiful, confident smiles."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="section">
-            <h2>Our Dental Services</h2>
+        <section id="services">
+            <h2>Nos Services</h2>
             <div class="services-container">
-                <div class="service-tabs">
-                    <button class="tab-button active" data-tab="general">General Dentistry</button>
-                    <button class="tab-button" data-tab="cosmetic">Cosmetic Dentistry</button>
-                    <button class="tab-button" data-tab="orthodontics">Orthodontics</button>
-                    <button class="tab-button" data-tab="implants">Dental Implants</button>
-                    <button class="tab-button" data-tab="specialized">Specialized Care</button>
+                <div class="service">
+                    <h3>Soins dentaires</h3>
+                    <p>Détartrage, plombages, traitements de carie</p>
                 </div>
-                
-                <div class="service-tab-content">
-                    <!-- General Dentistry -->
-                    <div id="general" class="tab-pane active">
-                        <div class="service-details">
-                            <div class="service-media">
-                                <img src="c:\Users\youss\Downloads\pexels-karolina-grabowska-6627367.jpg" alt="General Dentistry">
-                            </div>
-                            <div class="service-description">
-                                <h3>Comprehensive General Dentistry</h3>
-                                <p>We provide complete dental care to maintain your oral health and prevent future problems. Our general dentistry services include:</p>
-                                <ul>
-                                    <li><strong>Dental Examinations:</strong> Thorough check-ups with digital X-rays</li>
-                                    <li><strong>Professional Cleanings:</strong> Removal of plaque and tartar buildup</li>
-                                    <li><strong>Fillings:</strong> Tooth-colored composite restorations</li>
-                                    <li><strong>Root Canal Therapy:</strong> Painless treatment for infected teeth</li>
-                                    <li><strong>Periodontal Care:</strong> Treatment for gum disease</li>
-                                    <li><strong>Oral Cancer Screening:</strong> Early detection for better outcomes</li>
-                                </ul>
-                                <p>Regular dental visits are essential for maintaining good oral health and preventing serious conditions.</p>
-                                <a href="#appointment" class="service-cta">Schedule a Check-up</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Cosmetic Dentistry -->
-                    <div id="cosmetic" class="tab-pane">
-                        <div class="service-details">
-                            <div class="service-media">
-                                <img src="c:\Users\youss\Downloads\pexels-karolina-grabowska-6627564.jpg" alt="Cosmetic Dentistry">
-                            </div>
-                            <div class="service-description">
-                                <h3>Smile Enhancement Services</h3>
-                                <p>Transform your smile with our cosmetic dentistry procedures designed to improve the appearance of your teeth:</p>
-                                <ul>
-                                    <li><strong>Teeth Whitening:</strong> Professional-grade bleaching for a brighter smile</li>
-                                    <li><strong>Porcelain Veneers:</strong> Custom-made shells to correct imperfections</li>
-                                    <li><strong>Composite Bonding:</strong> Repair chips and cracks with tooth-colored material</li>
-                                    <li><strong>Smile Makeovers:</strong> Comprehensive treatment plans for complete transformations</li>
-                                    <li><strong>Gum Contouring:</strong> Reshape your gum line for a balanced smile</li>
-                                    <li><strong>Inlays & Onlays:</strong> Indirect restorations for damaged teeth</li>
-                                </ul>
-                                <p>Our cosmetic treatments can dramatically improve your smile and boost your confidence.</p>
-                                <a href="#appointment" class="service-cta">Get Your Dream Smile</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Orthodontics -->
-                    <div id="orthodontics" class="tab-pane">
-                        <div class="service-details">
-                            <div class="service-media">
-                                <video autoplay muted loop>
-                                    <source src="c:\Users\youss\Downloads\6529153-uhd_2160_4096_25fps.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="service-description">
-                                <h3>Advanced Orthodontic Solutions</h3>
-                                <p>We offer a range of orthodontic treatments to straighten teeth and correct bite issues:</p>
-                                <ul>
-                                    <li><strong>Traditional Braces:</strong> Metal brackets for effective tooth movement</li>
-                                    <li><strong>Ceramic Braces:</strong> Less noticeable tooth-colored brackets</li>
-                                    <li><strong>Invisalign:</strong> Clear, removable aligners for discreet treatment</li>
-                                    <li><strong>Lingual Braces:</strong> Braces placed behind teeth for complete invisibility</li>
-                                    <li><strong>Retainers:</strong> Custom devices to maintain your new smile</li>
-                                    <li><strong>Early Intervention:</strong> Pediatric orthodontic evaluations</li>
-                                </ul>
-                                <p>Properly aligned teeth are easier to clean, function better, and create a more attractive smile.</p>
-                                <a href="#appointment" class="service-cta">Start Your Straight Smile Journey</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Dental Implants -->
-                    <div id="implants" class="tab-pane">
-                        <div class="service-details">
-                            <div class="service-media">
-                                <img src="c:\Users\youss\Downloads\pexels-pavel-danilyuk-6812500.jpg" alt="Dental Implants">
-                            </div>
-                            <div class="service-description">
-                                <h3>Permanent Tooth Replacement</h3>
-                                <p>Dental implants are the gold standard for replacing missing teeth and restoring your smile:</p>
-                                <ul>
-                                    <li><strong>Single Tooth Implants:</strong> Replace individual missing teeth</li>
-                                    <li><strong>Implant-Supported Bridges:</strong> Replace multiple missing teeth</li>
-                                    <li><strong>All-on-4:</strong> Full arch restoration with just four implants</li>
-                                    <li><strong>Bone Grafting:</strong> Prepare the jawbone for implant placement</li>
-                                    <li><strong>Sinus Lifts:</strong> Create space for upper jaw implants</li>
-                                    <li><strong>Implant Maintenance:</strong> Care for your long-term investment</li>
-                                </ul>
-                                <p>Implants look, feel, and function like natural teeth and help preserve jawbone structure.</p>
-                                <a href="#appointment" class="service-cta">Schedule a Consultation</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Specialized Care -->
-                    <div id="specialized" class="tab-pane">
-                        <div class="service-details">
-                            <div class="service-media">
-                                <img src="c:\Users\youss\Downloads\pexels-tima-miroshnichenko-5355695.jpg" alt="Specialized Dental Care">
-                            </div>
-                            <div class="service-description">
-                                <h3>Specialized Dental Treatments</h3>
-                                <p>We offer advanced procedures to address complex dental needs:</p>
-                                <ul>
-                                    <li><strong>TMJ Therapy:</strong> Treatment for jaw joint disorders</li>
-                                    <li><strong>Sleep Apnea Appliances:</strong> Oral devices to improve breathing</li>
-                                    <li><strong>Full Mouth Reconstruction:</strong> Comprehensive restoration of damaged dentition</li>
-                                    <li><strong>Sedation Dentistry:</strong> Options for anxious patients</li>
-                                    <li><strong>Pediatric Dentistry:</strong> Specialized care for children</li>
-                                    <li><strong>Emergency Care:</strong> Immediate treatment for dental trauma</li>
-                                </ul>
-                                <p>Our specialized services address unique dental challenges with customized treatment plans.</p>
-                                <a href="#appointment" class="service-cta">Discuss Your Needs</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="service">
+                    <h3>Orthodontie</h3>
+                    <p>Appareils dentaires pour enfants et adultes</p>
+                </div>
+                <div class="service">
+                    <h3>Blanchiment</h3>
+                    <p>Un sourire plus blanc et éclatant</p>
                 </div>
             </div>
         </section>
 
-        <!-- Dental Advice Section -->
-        <section id="advice" class="section">
-            <h2>Dental Health Advice</h2>
-            <div class="advice-container">
-                <div class="advice-intro">
-                    <p>Maintaining good oral health is essential for your overall well-being. Here are some professional tips to keep your smile healthy and bright:</p>
+        <section id="rendezvous">
+            <h2>Prendre rendez-vous</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="name">Nom complet:</label>
+                    <input type="text" id="name" required>
                 </div>
-                
-                <div class="advice-categories">
-                    <div class="advice-category">
-                        <h3><i class="fas fa-toothbrush"></i> Daily Care</h3>
-                        <ul>
-                            <li>Brush your teeth twice daily with fluoride toothpaste</li>
-                            <li>Floss at least once a day to remove plaque between teeth</li>
-                            <li>Use an antimicrobial mouthwash to reduce bacteria</li>
-                            <li>Clean your tongue to remove bacteria and freshen breath</li>
-                            <li>Replace your toothbrush every 3-4 months</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="advice-category">
-                        <h3><i class="fas fa-utensils"></i> Nutrition</h3>
-                        <ul>
-                            <li>Limit sugary and acidic foods and drinks</li>
-                            <li>Eat calcium-rich foods for strong teeth</li>
-                            <li>Drink plenty of water throughout the day</li>
-                            <li>Choose crunchy fruits and vegetables that help clean teeth</li>
-                            <li>Avoid frequent snacking between meals</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="advice-category">
-                        <h3><i class="fas fa-calendar-check"></i> Preventive Care</h3>
-                        <ul>
-                            <li>Visit your dentist every 6 months for check-ups</li>
-                            <li>Get professional cleanings to remove tartar buildup</li>
-                            <li>Consider dental sealants for cavity-prone teeth</li>
-                            <li>Wear a mouthguard during sports activities</li>
-                            <li>Quit smoking to reduce oral health risks</li>
-                        </ul>
-                    </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" required>
                 </div>
-                
-                <div class="common-problems">
-                    <h3>Common Dental Problems and Solutions</h3>
-                    <div class="problems-grid">
-                        <div class="problem-card">
-                            <h4>Tooth Sensitivity</h4>
-                            <p>Use desensitizing toothpaste and avoid extreme temperatures in foods.</p>
-                        </div>
-                        <div class="problem-card">
-                            <h4>Gum Disease</h4>
-                            <p>Improve oral hygiene and schedule professional cleanings more frequently.</p>
-                        </div>
-                        <div class="problem-card">
-                            <h4>Bad Breath</h4>
-                            <p>Stay hydrated, clean your tongue, and check for underlying dental issues.</p>
-                        </div>
-                        <div class="problem-card">
-                            <h4>Tooth Decay</h4>
-                            <p>Reduce sugar intake, use fluoride products, and get cavities treated early.</p>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="service">Service:</label>
+                    <select id="service" required>
+                        <option value="">Choisir un service</option>
+                        <option value="soins">Soins dentaires</option>
+                        <option value="ortho">Orthodontie</option>
+                        <option value="blanchiment">Blanchiment</option>
+                    </select>
                 </div>
-                
-                <div class="emergency-advice">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Dental Emergencies</h3>
-                    <p>If you experience any of the following, contact us immediately:</p>
-                    <ul>
-                        <li>Severe toothache that persists more than 1-2 days</li>
-                        <li>Knocked-out tooth (keep it moist and try to reinsert it if possible)</li>
-                        <li>Cracked or broken tooth (rinse with warm water and apply cold compress)</li>
-                        <li>Lost filling or crown (try to keep the restoration and bring it to your appointment)</li>
-                        <li>Abscess or swelling (may indicate serious infection)</li>
-                    </ul>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
                 </div>
-            </div>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="section">
-            <h2>Patient Testimonials</h2>
-            <div class="testimonials-container">
-                <div class="testimonial-slider">
-                    <div class="testimonial active">
-                        <div class="testimonial-content">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"Dr. Lagmouch transformed my smile with Invisalign. The entire process was comfortable and the results exceeded my expectations. I can't stop smiling now!"</p>
-                            <div class="patient-info">
-                                <img src="https://cdn.unitycms.io/images/6noSHuprqylAI-s_8GqFIA.jpg?op=ocroped&val=1200,630,1000,1000,0,0&sum=2fkFQTZf_so" alt="Patient" class="patient-photo">
-                                <div>
-                                    <h4>Sarah K.</h4>
-                                    <span>Orthodontic Patient</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial">
-                        <div class="testimonial-content">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"After years of being afraid of dentists, I finally found someone I trust. Dr. Lagmouch is gentle, patient, and explains everything clearly. My dental implants feel and look natural."</p>
-                            <div class="patient-info">
-                                <img src="https://www.photomaintenant.fr/_next/static/media/photo-professionnelle-ia-homme-fond-ville-costume-noir-01.dc7e07e3.webp" alt="Patient" class="patient-photo">
-                                <div>
-                                    <h4>Mohammed T.</h4>
-                                    <span>Implant Patient</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial">
-                        <div class="testimonial-content">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <p>"The entire team is professional and friendly. They made my children feel comfortable during their check-ups. We've been coming here for years and always receive excellent care."</p>
-                            <div class="patient-info">
-                                <img src="https://lpost.be/wp-content/uploads/2022/02/CAP-698x700.jpg" alt="Patient" class="patient-photo">
-                                <div>
-                                    <h4>Amina R.</h4>
-                                    <span>Family Patient</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-controls">
-                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
-                    <div class="testimonial-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            
-            <div class="before-after-gallery">
-                <h3>Smile Transformations</h3>
-                <div class="gallery-container">
-                    <div class="before-after-card">
-                        <div class="image-comparison">
-                            <img src="data:image/jpeg;base64,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" alt="Before Treatment" class="before-image">
-                            <img src="data:image/jpeg;base64,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" alt="After Treatment" class="after-image">
-                            <div class="slider-handle"></div>
-                        </div>
-                        <p>Orthodontic Treatment - 18 months</p>
-                    </div>
-                    <div class="before-after-card">
-                        <div class="image-comparison">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxjg7in5KyhSogOXmu_LUi1kaBOzQuwnFBDw&s" alt="Before Treatment" class="before-image">
-                            <img src="data:image/jpeg;base64,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" alt="After Treatment" class="after-image">
-                            <div class="slider-handle"></div>
-                        </div>
-                        <p>Cosmetic Makeover - Porcelain Veneers</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Appointment Section -->
-        <section id="appointment" class="section">
-            <div class="appointment-container">
-                <div class="appointment-form-container">
-                    <h2>Book an Appointment</h2>
-                    <form class="appointment-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name*</label>
-                                <input type="text" id="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email*</label>
-                                <input type="email" id="email" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number*</label>
-                                <input type="tel" id="phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="dob">Date of Birth</label>
-                                <input type="date" id="dob">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Service Needed*</label>
-                            <select id="service" required>
-                                <option value="">-- Select a service --</option>
-                                <option value="checkup">Routine Check-up</option>
-                                <option value="cleaning">Professional Cleaning</option>
-                                <option value="whitening">Teeth Whitening</option>
-                                <option value="orthodontics">Orthodontic Consultation</option>
-                                <option value="implants">Dental Implants</option>
-                                <option value="cosmetic">Cosmetic Dentistry</option>
-                                <option value="emergency">Emergency Care</option>
-                                <option value="other">Other Service</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Preferred Date*</label>
-                                <input type="date" id="date" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Preferred Time*</label>
-                                <input type="time" id="time" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Additional Information</label>
-                            <textarea id="message" rows="4" placeholder="Please describe your dental concerns or special requests"></textarea>
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="new-patient" checked>
-                            <label for="new-patient">I'm a new patient</label>
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="insurance">
-                            <label for="insurance">I have dental insurance</label>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">Request Appointment</button>
-                    </form>
-                </div>
-                
-                <div class="appointment-info">
-                    <h3>Why Choose Our Clinic?</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Same-day emergency appointments available</li>
-                        <li><i class="fas fa-check-circle"></i> Flexible payment options</li>
-                        <li><i class="fas fa-check-circle"></i> Comfortable, anxiety-free environment</li>
-                        <li><i class="fas fa-check-circle"></i> State-of-the-art equipment</li>
-                        <li><i class="fas fa-check-circle"></i> Multilingual staff</li>
-                    </ul>
-                    
-                    <div class="office-hours">
-                        <h4><i class="fas fa-clock"></i> Office Hours</h4>
-                        <table>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9:00 AM - 7:00 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday</td>
-                                <td>9:00 AM - 2:00 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                    <div class="insurance-info">
-                        <h4><i class="fas fa-file-invoice-dollar"></i> Insurance Information</h4>
-                        <p>We accept most major insurance plans and will gladly assist you with insurance claims and paperwork.</p>
-                        <p>Please bring your insurance information to your first appointment.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
-                    <address>
-                        <p>123 Dental Avenue, 3rd Floor<br>
-                        Casablanca 20000, Morocco</p>
-                    </address>
-                    
-                    <h3><i class="fas fa-phone-alt"></i> Contact Information</h3>
-                    <p><strong>Phone:</strong> +212 522 123 456</p>
-                    <p><strong>Emergency:</strong> +212 600 123 456</p>
-                    <p><strong>Email:</strong> info@dryoussefdental.com</p>
-                    
-                    <h3><i class="fas fa-bus"></i> Parking & Transportation</h3>
-                    <p>Free parking available in our underground garage. We're easily accessible by tram (Stop: Dental Avenue).</p>
-                    
-                    <div class="social-media">
-                        <h3>Follow Us</h3>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.349646143843!2d-7.632376684798502!3d33.59624978073236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778a113b1%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            
-            <div class="contact-form-container">
-                <h3>Send Us a Message</h3>
-                <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-name">Name*</label>
-                            <input type="text" id="contact-name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email">Email*</label>
-                            <input type="email" id="contact-email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="contact-subject">Subject</label>
-                        <input type="text" id="contact-subject">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="contact-message">Message*</label>
-                        <textarea id="contact-message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <div class="contact-info">
+                <p><strong>Adresse:</strong> 123 Avenue Dentaire, Casablanca</p>
+                <p><strong>Téléphone:</strong> 05 22 123 456</p>
+                <p><strong>Email:</strong> contact@drlagmouch.com</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#dentist">Our Dentist</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#advice">Dental Advice</a></li>
-                    <li><a href="#appointment">Appointment</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#services">General Dentistry</a></li>
-                    <li><a href="#services">Cosmetic Dentistry</a></li>
-                    <li><a href="#services">Orthodontics</a></li>
-                    <li><a href="#services">Dental Implants</a></li>
-                    <li><a href="#services">Specialized Care</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Contact Info</h4>
-                <address>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Dental Avenue<br>
-                    Casablanca 20000, Morocco</p>
-                    <p><i class="fas fa-phone-alt"></i> +212 522 123 456</p>
-                    <p><i class="fas fa-envelope"></i> info@dryoussefdental.com</p>
-                </address>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Newsletter</h4>
-                <p>Subscribe to receive dental health tips and clinic updates.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2023 Dr. YOUSSEF LAGMOUCH Dental Clinic. All rights reserved.</p>
-            <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Sitemap</a>
-            </div>
-        </div>
+        <p>&copy; 2023 Clinique Dentaire Dr. Lagmouch</p>
     </footer>
 
     <script src="script.js"></script>

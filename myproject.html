@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Youssef Lagmouch - Dental Clinic Casablanca</title>
+    <link rel="stylesheet" href="myproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeBtn"><i class="fas fa-moon"></i> Dark Mode</button>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="data:image/jpeg;base64,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" alt="Dr. Lagmouch Dental Clinic Logo" class="logo">
+            <div class="clinic-name">
+                <h1>Dr. Youssef Lagmouch</h1>
+                <p>Dental Surgeon</p>
+            </div>
+        </div>
+     
+        <div class="video-banner">
+            <video autoplay muted loop>
+                <source src="c:\Users\youss\Downloads\4490311-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="banner-text">
+                <h2>Exceptional Dental Care</h2>
+                <p>In Casablanca since 2015</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#services"><i class="fas fa-tooth"></i> Services</a></li>
+            <li><a href="#treatments"><i class="fas fa-teeth"></i> Treatments</a></li>
+            <li><a href="#appointment"><i class="fas fa-calendar-check"></i> Appointment</a></li>
+            <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="home" class="section">
+            <h2>Welcome to Our Dental Clinic</h2>
+            <p>We provide high-quality dental care in a comfortable and modern environment.</p>
+            <p>Committed to personalized services for every patient.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <img src="c:\Users\youss\Downloads\pexels-karolina-grabowska-6627367.jpg" alt="General Dentistry">
+                    <h3>General Dentistry</h3>
+                    <p>Regular checkups, cleanings, and basic dental care</p>
+                </div>
+                <div class="service">
+                    <img src="data:image/jpeg;base64,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" alt="Cosmetic Dentistry">
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and smile makeovers</p>
+                </div>
+                <div class="service">
+                    <img src="c:\Users\youss\Downloads\pexels-cottonbro-6528864.jpg" alt="Orthodontics">
+                    <h3>Orthodontics</h3>
+                    <p>Braces and aligners for children and adults</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="section">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" required>
+                        <option value="">-- Select Service --</option>
+                        <option value="general">General Dentistry</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="orthodontics">Orthodontics</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Submit Request</button>
+            </form>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Dental Avenue, Casablanca</p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +212 522 123 456</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contact@drlagmouch.com</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.349646143843!2d-7.632376684798502!3d33.59624978073236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778a113b1%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dr. Youssef Lagmouch Dental Clinic - All Rights Reserved</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="myproject.js"></script>
+</body>
+</html>

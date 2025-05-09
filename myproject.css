@@ -1,0 +1,376 @@
+:root {
+    --primary: #0f4f6a;
+    --primary-dark: #1b7ba8;
+    --secondary: #f8f9fa;
+    --dark: #2c3e50;
+    --light: #ffffff;
+    --text: #333;
+    --text-light: #666;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+    --primary: #19588f;
+    --primary-dark: #16728b;
+    --secondary: #121212;
+    --dark: #e0e0e0;
+    --light: #2d2d2d;
+    --text: #e0e0e0;
+    --text-light: #b0b0b0;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--secondary);
+    transition: var(--transition);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#themeBtn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+#themeBtn:hover {
+    background-color: var(--primary-dark);
+}
+
+header {
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--light);
+    box-shadow: var(--shadow);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.clinic-name h1 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.clinic-name p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.video-banner {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: var(--primary);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service {
+    flex: 1;
+    min-width: 300px;
+    background: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service h3 {
+    padding: 15px;
+    margin: 0;
+    color: var(--primary);
+}
+
+.service p {
+    padding: 0 15px 15px;
+    margin: 0;
+    color: var(--text-light);
+}
+
+form {
+    background: var(--light);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--secondary);
+    color: var(--text);
+    transition: var(--transition);
+}
+
+input:focus, select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0;
+    transition: var(--transition);
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--primary);
+    width: 20px;
+    text-align: center;
+}
+
+.map-container {
+    flex: 2;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        position: static;
+        justify-content: center;
+    }
+    
+    .video-banner {
+        height: 300px;
+    }
+    
+    .banner-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .services-container, .treatments-container {
+        flex-direction: column;
+    }
+}
